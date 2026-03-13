@@ -5,13 +5,13 @@ fun main() {
         val a = processed.filter{it in complement }
         return a.first()*a.last()
     }
-
+//
     fun part2(input: List<String>): Int { // 3-Sum
         val processed = input.map{it.toInt()}
         for (num in processed) {
             val complement = processed.map{2020-num-it}
             val a = processed.filter{it in complement }
-            if (a.size.equals(2)) {
+            if (a.size==(2)) {
                 return num*a.first()*a.last()
             }
         }
